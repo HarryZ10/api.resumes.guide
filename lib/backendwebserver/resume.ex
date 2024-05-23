@@ -12,24 +12,20 @@ defmodule RandomTextGenerator do
   Defining what the Random Number Generator class is
   Creates a new random text gen object given a `grammar_file`
   """
-  def new(grammar_file) do
-    %RandomTextGenerator{grammar_file: grammar_file}
+  def new(grammar_file_content) do
+    %RandomTextGenerator{grammar_file: grammar_file_content}
     |> read_grammar_rules()
   end
 
-  # Reads grammar rules from the file and
+  # Reads grammar rules from the file content and
   # does initial massaging before processing them
   # Returns `rtg` struct
   defp read_grammar_rules(%RandomTextGenerator{} = rtg) do
-
-    # Read/load everything in the file's content
-    lines =
-      File.read!(rtg.grammar_file)
-        # Massage: Split on new line and strip trailing whitespace
-        |> String.split("\n", trim: true)
+    # Massage: Split on new line and strip trailing whitespace
+    lines = String.split(rtg.grammar_file, "\n", trim: true)
 
     # Process the lines to extract the grammar rules
-    # Startng from our lines, empty grammar set, and an unknown start symbol
+    # Starting from our lines, empty grammar set, and an unknown start symbol
     {grammar, rtg} = process_lines(lines, %{}, nil)
 
     # Update and return the `rtg` struct with the extracted grammar rules
