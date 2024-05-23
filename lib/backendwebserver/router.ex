@@ -14,7 +14,7 @@ defmodule Backendwebserver.Router do
   end
 
   get "/generate" do
-    file_path = Path.expand("/app/resumesguide/lib/static/resume.g")
+    file_path = Path.expand("../static/resume.g")
     rtg = RandomTextGenerator.new(file_path)
     generated_text = RandomTextGenerator.run(rtg)
 
