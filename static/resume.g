@@ -20,9 +20,6 @@ by Harry Zhu (harryzhu45@gmail.com)
 
 {
 <bullet>
-<action> <result> for <reason> <using> <skills_list> and <skills_list> <conjunction> <impact> <quantifier> \n <bullet> ;
-<action> <result> for <reason> <using> <skills_list> and <skills_list> <conjunction> <impact> <quantifier> \n <bullet> ;
-<action> <result> for <reason> <using> <skills_list> and <skills_list> <conjunction> <impact> <quantifier> \n <bullet> ;
 <action> <result> <using> <skills_list> and <skills_list> for <reason> <conjunction> <impact> <quantifier> ;
 <action> <result> <using> <skills_list> and <skills_list> for <reason> <conjunction> <impact> <quantifier> ;
 <action> <result> <using> <skills_list> and <skills_list> for <reason> <conjunction> <impact> <quantifier> ;
