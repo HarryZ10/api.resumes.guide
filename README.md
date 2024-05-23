@@ -1,21 +1,17 @@
-# Backendwebserver
+# Resumes.Guide
 
-**TODO: Add description**
+Ever wonder what should a resume bullet point look like?
 
-## Installation
+Well, this service will now generate a resume bullet point using pure syntax
+determined by `resume.g` in the `static/`.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `backendwebserver` to your list of dependencies in `mix.exs`:
+You're more than welcome to contribute to this file if you know what you're doing
+to add to this grammar file.
 
-```elixir
-def deps do
-  [
-    {:backendwebserver, "~> 0.1.0"}
-  ]
-end
-```
+# Backend Server
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/backendwebserver>.
+Written in Elixir
 
+# Frontend Client
+
+Coming Soon in React.js
