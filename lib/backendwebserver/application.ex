@@ -11,7 +11,7 @@ defmodule Backendwebserver.Application do
     children = [
       # Starts a worker by calling: Backendwebserver.Worker.start_link(arg)
       # {Backendwebserver.Worker, arg}
-      {Plug.Cowboy, scheme: :http, plug: Backendwebserver.Router , options: [port: 8000]}
+      {Plug.Cowboy, scheme: :http, plug: Backendwebserver.Router , options: [port: 4000]}
     ]
 
     Logger.info("Starting web server")
