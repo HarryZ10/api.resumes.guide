@@ -10,7 +10,7 @@ defmodule Backendwebserver.Router do
     do: Corsica.send_preflight_resp(conn, origins: "*")
 
   get "/generate" do
-    github_raw_url = "https://raw.githubusercontent.com/HarryZ10/resumes.guide/main/static/resume.g"
+    github_raw_url = "https://raw.githubusercontent.com/HarryZ10/api.resumes.guide/main/static/resume.g"
 
     case HTTPoison.get(github_raw_url) do
       {:ok, %HTTPoison.Response{status_code: 200, body: file_content}} ->
