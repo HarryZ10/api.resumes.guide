@@ -1,6 +1,8 @@
 # Resume Bullet Syntax Generator
 
-This is bundled into `https://api.resumes.guide/generate` and publicly accessible made possible by [Gigalixir](https://www.gigalixir.com/) for the cost of none, and of course, Elixir.
+## Inspired by the [original implementation](https://github.com/HarryZ10/generative-grammar.git) of mines in Python
+
+This public web service is bundled into `https://api.resumes.guide/generate` and publicly accessible made possible by [Gigalixir](https://www.gigalixir.com/) for the cost of none, and of course, Elixir.
 
 So, have you ever wonder what a resume bullet point should look like? This service generates resume bullet points using pure syntax and grammar determinations.
 

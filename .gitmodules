@@ -1,0 +1,3 @@
+[submodule "generative-grammar"]
+	path = generative-grammar
+	url = https://github.com/HarryZ10/generative-grammar.git
